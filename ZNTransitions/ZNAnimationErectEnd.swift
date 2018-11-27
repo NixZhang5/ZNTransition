@@ -20,11 +20,17 @@ extension ZNAnimationErectEnd: UIViewControllerAnimatedTransitioning {
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         let fromView = transitionContext.view(forKey: UITransitionContextViewKey.from)
+        
         let toView = transitionContext.view(forKey: UITransitionContextViewKey.to)
+        if let toView = toView {
+            transitionContext.containerView.addSubview(toView)
+            toView.frame = transitionContext.containerView.bounds
+        }
+
         let snapShot = fromView?.snapshotView(afterScreenUpdates: false)
-        transitionContext.containerView.addSubview(toView!)
-        transitionContext.containerView.addSubview(snapShot!)
-        toView?.frame = transitionContext.containerView.bounds
+        if let snapShot = snapShot {
+            transitionContext.containerView.addSubview(snapShot)
+        }
         
         snapShot?.layer.anchorPoint = CGPoint(x: 0, y: 0.5)
         snapShot?.layer.position = CGPoint(x: 0, y: CGFloat((snapShot?.frame.height)! * 0.5))

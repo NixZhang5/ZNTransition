@@ -19,6 +19,7 @@
 		3F3081B621A53CE100757101 /* ZNAnimationBackEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3081B521A53CE100757101 /* ZNAnimationBackEnd.swift */; };
 		3F3081B821A5436300757101 /* ZNAnimationErectBegin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3081B721A5436300757101 /* ZNAnimationErectBegin.swift */; };
 		3F3081BA21A5437300757101 /* ZNAnimationErectEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3081B921A5437300757101 /* ZNAnimationErectEnd.swift */; };
+		3FF442BE21AD2DDE006D4FE7 /* ZNVCTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF442BD21AD2DDE006D4FE7 /* ZNVCTransitionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3F3081B521A53CE100757101 /* ZNAnimationBackEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZNAnimationBackEnd.swift; sourceTree = "<group>"; };
 		3F3081B721A5436300757101 /* ZNAnimationErectBegin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZNAnimationErectBegin.swift; sourceTree = "<group>"; };
 		3F3081B921A5437300757101 /* ZNAnimationErectEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZNAnimationErectEnd.swift; sourceTree = "<group>"; };
+		3FF442BD21AD2DDE006D4FE7 /* ZNVCTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZNVCTransitionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				3F3081B521A53CE100757101 /* ZNAnimationBackEnd.swift */,
 				3F3081B721A5436300757101 /* ZNAnimationErectBegin.swift */,
 				3F3081B921A5437300757101 /* ZNAnimationErectEnd.swift */,
+				3FF442BD21AD2DDE006D4FE7 /* ZNVCTransitionDelegate.swift */,
 				3F30819A21A51A3100757101 /* ViewController.swift */,
 				3F3081AA21A51AFD00757101 /* CircleViewController.swift */,
 				3F30819C21A51A3100757101 /* Main.storyboard */,
@@ -164,6 +167,7 @@
 				3F3081AB21A51AFD00757101 /* CircleViewController.swift in Sources */,
 				3F3081BA21A5437300757101 /* ZNAnimationErectEnd.swift in Sources */,
 				3F3081B821A5436300757101 /* ZNAnimationErectBegin.swift in Sources */,
+				3FF442BE21AD2DDE006D4FE7 /* ZNVCTransitionDelegate.swift in Sources */,
 				3F3081B621A53CE100757101 /* ZNAnimationBackEnd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

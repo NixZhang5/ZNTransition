@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var sourceArray: [String] = ["backScale", "erect"]
+    var sourceArray: [String] = ["backScale", "erect", "erect present"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         case "erect":
             let vc = CircleViewController()
             self.navigationController?.zn_pushViewController(vc, style: .erect)
+            break
+        case "erect present":
+            let vc = CircleViewController()
+            self.navigationController?.zn_presentErectVC(vc, completion: nil)
             break
         default:
             break

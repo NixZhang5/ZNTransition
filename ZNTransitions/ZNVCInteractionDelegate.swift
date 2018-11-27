@@ -15,13 +15,13 @@ class ZNVCInteractionDelegate: UIPercentDrivenInteractiveTransition {
 
     var isPop: Bool = false
     var isInteraction: Bool = false
-}
-
-extension ZNVCInteractionDelegate: UINavigationControllerDelegate {
     
     public static let shareInstance: ZNVCInteractionDelegate = {
         return ZNVCInteractionDelegate()
     }()
+}
+
+extension ZNVCInteractionDelegate: UINavigationControllerDelegate {
     
     func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return isInteraction ? isPop ? self : nil : nil
